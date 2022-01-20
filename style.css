@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/*Resetando todas as configurações do Html que possa vir para o css*/
+*{
+    /* retira todas as margens da tela*/
+    margin: 0;
+    retira todas os espacametos da borda até o conteudo
+    padding: 0;
+    
+    box-sizing: border-box;
+    /*retira qualquer decoração do texto vindo do html*/
+    text-decoration: none;
+}
+
+/*resetando todas as configurações do body*/
+body{
+    /*tamanoho da fonte*/
+    font-size: 100%;
+    /*colocar a cor de fundo da tela, com um gradiente*/
+    background: linear-gradient(68.15deg, #2f2325 16.62%, #8e5d52 85.61%);
+}
+
+.cabecalho{
+    /*primeiramente defina a posição de cada elemento do cabeçalho,
+    para utilizar o FLEXBOX, siga o guia salvo nos favoritos
+    ou no linkhttps://www.youtube.com/watch?v=llF6vD-RljE&t=107s&ab_channel=RafaellaBallerini */
+    
+    display: flex;
+    /*definir a direção dos itens*/
+    flex-direction: row;
+    /*Alinhamento dos componentes do menu(imagem, menus etc*/
+    align-items: center;
+    /*espaçamento dos itens mais de fora*/
+    align-items: center;
+    /*tipo de espaçamento*/
+    justify-content: space-around;
+    /*afastamento para o topo/ todos os lados pq nao foi especificado*/
+    padding: 24px;
+}
+
+.imagem_cabecalho{
+    /*alterar as caracteristicas da imagem*/
+    /*Bordas da imagem, transformando em um circulo*/
+    border-radius: 50%;
+    /*altura*/
+    height: 72px;
+}
+
+.cabecalho_menu{
+    /*alterando as caracteristicas principais o menu*/
+    display: flex;
+    /*com o gap é possivel alterar a distancia entre os elementos da teag menu*/
+    gap: 32px;
+}
+
+.cabecalho_menu_item{
+    /*alterando os "botoes" do menu*/
+    /*alterando a fonte conforme ling no inicio, fonte pega no googlefonts*/
+    font-family: 'Sarala', sans-serif;
+    /*Cor da Fonte*/
+    color: #FFF2E7;
+    /*quanto maior o font weitght mais em negrito a letra fica*/
+    font-weight: 400;
+    /*tamanho da fonte*/
+    font-size: 18px;
+}
+
+
+/*Alteração do CONTEUDO PRINCIPAL*/
+
+.conteudo{
+    /*LInha que delimita o titulo e o corpo do texto*/
+    border-top: 0.4px solid #FFF2E7;
+    /*margem inferior*/
+    margin-bottom: 48px;
+}
+
+.conteudo_principal{
+    /*Alterando a cessao principal*/
+      /*fazer inicialemtne o ajuste do display*/
+    display: flex;
+/*definir o sentido, nese caso em linha/ DEIXA O CONTEUDO NA HORIZONTAL*/
+    flex-direction: row;
+    /*Centralizar os intens da linha*/
+    align-items: center;
+    /*espaçamento das bordas laterais*/
+    justify-content: space-around;
+}
+
+.conteudo_principal_escrito{
+    /*Alterar as caracteristicas do texto*/
+    /*ajustar a disposição do conteudo com o display flex, todo conteudo fina na horizontal*/
+    display: flex;
+    /*Agora corrigimos a direção e colocamos o conteudo em COLUNA e nao em linha*/
+    flex-direction: column;
+    /*Definimos um espaçamento entre os itens da coluna*/
+    gap: 32px;
+}
+
+.conteudo_principal_escrito-titulo{
+    /*Alterar o titulo principal*/
+    /*Alterando a fonte*/
+    font-family: 'Righteous', cursive;
+    /*alterar o peso da fonte/ opacidade*/
+    font-weight: 400;
+    /*tamanho da fonte*/
+    font-size: 64px;
+    /*cor do texto*/
+    color: #fff2e7;
+}
+
+.conteudo_principal_escrito-sub-titulo{
+    /*Alterar o sub-titulo*/
+    /*tipo da fonte retirada o google fonts*/
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    /*tamanho da fonte*/
+    font-size: 24px;
+    /*cor do texto*/
+    color: #ECD6C4
+}
+
+.conteudo_principal_escrito-botao{
+  /*alterando as caracteristicas do botão*/
+    /*Cor de fundo */
+    background-color: #ECD6C4;
+    /*Alterando o tamanho (altura e largura)*/
+    width: 180px;
+    height: 60px;
+    /*retirando a borda colorida que fica*/
+    border: none;
+    /*Alterar a sombra, caix de sombra do botão*/
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 25);
+    /*Arredondamento das bordas*/
+    border-radius: 20px;
+  /*alterar as caracteristicas da escrita do botão*/
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    /*tamanho da fonte*/
+    font-size: 24px;
+    /*cor do texto*/
+    color: #2f2325;
+   /*Altrar o estilo do botão, para quando passar o mouse encima mudar de cor*/
+}
+
+/*Altrar o estilo do botão, para quando passar o mouse encima mudar de cor*/
+.conteudo_principal_escrito-botao:hover{
+    /*Alterarndo o fundo quando o mouse passa por ele*/
+    background-color: rgba(236, 214, 196, 0.53) 
+}
+
+.conteudo_principal_imagem{
+    /*definindo o tamanho da imagem*/
+    height: 300px;
+}
+
+.conteudo_secundario{
+    /*alterações na estrutura do titulo do conteudo secundario*/
+    /*ajustar a disposição do conteudo com o display flex, todo conteudo fina na horizontal*/
+    display: flex;
+    /*Agora corrigimos a direção e colocamos o conteudo em COLUNA e nao em linha*/
+    flex-direction: column;
+    /*Definir o alinhamento dodos itens*/
+    align-items: center;
+    /*definindo o espaçamento entre as linhas*/
+    gap: 24px;
+    /*Definindo uma margem de afastamento do conteudo com o topo*/
+    margin-top: 48px;
+    
+    
+}
+
+.conteudo_secundario-titulo{
+    /*Alterando o titulo*/
+    /*Comando para definir a linha de divisão acima do titulo secundario*/
+    border-top: 0.4px solid #FFF2E7;
+    /*colocar um padding-top para afastar a linha apenas no topo,
+    altera apenas a distancia do conteudo até a borda */
+    padding-top: 48px;
+    /*Alterando a fonte*/
+    font-family: 'Righteous', cursive;
+    /*alterar o peso da fonte/ opacidade*/
+    font-weight: 400;
+    /*tamanho da fonte*/
+    font-size: 24px;
+    /*cor do texto*/
+    color: #fff2ef;
+    /*colocar espacamento extra entra o titulo e o conteudo*/
+    margin-bottom: 16px;
+}
+
+.conteudo_secundarioparagrafo{
+    /*Estilizar o paragrafo, fonte etc*/
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    /*tamanho da fonte*/
+    font-size: 18px;
+    /*cor do texto*/
+    color: #ECD6C4;
+
+}
+
+.rodape{
+    /*Alterar a estrutura/box em que o rodapé ficará*/
+    /*Colocar um distanciamento entre o conteudo*/
+    padding: 32px;
+    /*adicionar uma linha de separação entre o corpo do conteudo
+    e o rodapé*/
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem{
+    /*alterar agora o posicionamento e tamanho da imagem de rodapé*/
+    /*tamanho/altura*/
+    height: 70px;
+    /*posicionar no centro da tela, como temos apenas 1 elemento (imagem)
+    utilizamos um display block e uma margem de 0 auto.
+    OBS. funciona apenas para 1 elemento*/
+    display: block;
+    margin: 0 auto;
+
+}
